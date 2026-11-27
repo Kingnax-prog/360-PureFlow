@@ -1,0 +1,18 @@
+{
+  "name": "pureflow360-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend API scaffold for the PureFlow 360 frontend",
+  "engines": { "node": ">=20.0.0" },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check": "node scripts/check-syntax.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2"
+  }
+}
