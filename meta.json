@@ -1,0 +1,6 @@
+{
+  "name": "PureFlow 360",
+  "description": "Sales and Operations Monitoring System for Pure Flow 360 Water Refilling Station — daily sales recording, 20L container monitoring, water consumption estimation, COWD monthly bill calculation, and daily sales reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
