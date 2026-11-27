@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #0F2942;
+    background-color: #EDF5FF;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* PureFlow Login Gradient matching reference mockup */
+.pureflow-login-bg {
+  background: linear-gradient(155deg, #F2F7FF 0%, #CEE4FD 36%, #9ECAFA 72%, #7BB2F5 100%);
+}
+
+/* Frosted blue login card matching reference mockup */
+.pureflow-login-card {
+  background: linear-gradient(180deg, rgba(226, 240, 255, 0.72) 0%, rgba(191, 219, 252, 0.65) 100%);
+  box-shadow:
+    0 20px 44px -12px rgba(24, 72, 138, 0.18),
+    0 4px 12px rgba(24, 72, 138, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+}
+
+/* Subtle workspace surface background */
+.pureflow-app-bg {
+  background: linear-gradient(180deg, #F3F8FF 0%, #EAF3FE 100%);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .print-container {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+}
